@@ -20,7 +20,8 @@ body {
   align-items: center;
   flex-direction: column;
   border-radius: 25px;
-  width: clamp(200px, 40%, 400px);
+  width: clamp(100px, 100%, 600px);
+  
 
   overflow: auto;
   padding: 20px;
