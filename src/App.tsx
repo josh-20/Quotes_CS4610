@@ -32,7 +32,8 @@ function App() {
     loadRandom();
   }, [])
   return (
-    <div className='centerDiv'>
+    <body>
+      <div className='centerDiv'>
       <div>
       <h1 className='titleHeader'>Quote Search</h1>
       <form className='mb-3' onSubmit={handleSubmit}>
@@ -65,8 +66,8 @@ function App() {
 
 
     </div>
-    
-   
+
+    </body>  
   );
 }
 
