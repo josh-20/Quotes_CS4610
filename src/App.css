@@ -10,9 +10,14 @@
   box-sizing: border-box;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   height: 100vh;
-  text-align: center;
+  width: clamp(320px, 50vw, max-width);
+
 }
 .centerDiv {
   display: flex;
@@ -21,9 +26,9 @@ body {
   align-items: center;
   flex-direction: column;
   border-radius: 25px;
-  width: clamp(100px, 50vw, 1090px);
   overflow: auto;
   padding: 20px;
+  width: clamp(320px, 50vw, 1090px);
 }
 .randDiv{
   display: flex;
