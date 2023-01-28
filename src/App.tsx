@@ -32,7 +32,6 @@ function App() {
     loadRandom();
   }, [])
   return (
-    <body>
       <div className='centerDiv'>
       <div>
       <h1 className='titleHeader'>Quote Search</h1>
@@ -65,9 +64,7 @@ function App() {
       </div>
 
 
-    </div>
-
-    </body>  
+    </div> 
   );
 }
 
