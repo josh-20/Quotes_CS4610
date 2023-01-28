@@ -5,6 +5,8 @@
   text-align: center;
   justify-content: center;
   display: flex;
+  min-width: 320px;
+  max-width: 1440px;
 }
 * {
   box-sizing: border-box;
