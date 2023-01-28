@@ -33,20 +33,19 @@ function App() {
   }, [])
   return (
       <div className='centerDiv'>
-      <div>
-      <h1 className='titleHeader'>Quote Search</h1>
-      <form className='mb-3' onSubmit={handleSubmit}>
-        <input className='customInput' type="text" value={message} placeholder='Enter a Name' onChange={e => setMessage(e.target.value)}/>
-        <button onClick={loadQuotes} className='customSearch'>Search</button>
-      </form>
-      {quotes.length == 0 && (<>
-      <div className='randDiv'>
-      <h5>{randomQuote?.content}</h5>
-      <h6> - {randomQuote?.author}</h6>  
-      </div>
-      </>)}
-      
-      </div>
+        <div>
+          <h1 className='titleHeader'>Quote Search</h1>
+          <form className='mb-3' onSubmit={handleSubmit}>
+            <input className='customInput' type="text" value={message} placeholder='Enter a Name' onChange={e => setMessage(e.target.value)}/>
+            <button onClick={loadQuotes} className='customSearch'>Search</button>
+          </form>
+          {quotes.length == 0 && (<>
+            <div className='randDiv'>
+              <h5>{randomQuote?.content}</h5>
+              <h6> - {randomQuote?.author}</h6>  
+            </div>
+          </>)}  
+        </div>
       <div>
         {
           quotes.map((quote) => (
@@ -55,7 +54,7 @@ function App() {
                 <h5>{quote.content}</h5>
               </div>
               <div>
-              <h6>- {quote.author}</h6>
+                <h6> - {quote.author}</h6>
               </div>
               
             </div>
