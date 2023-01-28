@@ -70,13 +70,13 @@ body {
 h5 {
   margin: 5px;
   color: blanchedalmond;
-  font-family: cursive;
+  font-family: Arial, Helvetica, sans-serif;
 }
 h6 {
   margin: 5px;
 }
 .titleHeader {
-  font-family: cursive;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 1px;
   margin: 5px;
 }
